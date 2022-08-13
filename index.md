@@ -1,37 +1,149 @@
-## Welcome to GitHub Pages
+<!DOCTYPE html>
+<html>
+<head>
+    <title>V</title>
+         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+         <script src="https://kit.fontawesome.com/6dbcb3829c.js" crossorigin="anonymous"></script><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+         <link rel="shortcut icon" href="favicon.ico">
+    <style>
 
-You can use the [editor on GitHub](https://github.com/eeselling/site/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Oswald&display=swap');
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+body {
+  background-color: black;
+ 
+}
+#hero img {
+    height: 100vh;
+    width: 100%;
+    background-position: absolute;
+    z-index: 10;
+    object-fit: cover;
+}
 
-### Markdown
+#hero .content {
+    background: rgba(0,0,0,0.7);
+    height: 100%;
+    width: 100%;
+    z-index:20;
+    position:absolute;
+    top:0;
+    left:0;
+}
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+.switch {
+    position:absolute;
+    display: inline-block;
+    width: 60px;
+    height:34px;
+    left: 5%;
+    top:3%;
+}
 
-```markdown
-Syntax highlighted code block
+.switch input {
+    opacity:0;
+    width:0;
+    height:0;
+}
 
-# Header 1
-## Header 2
-### Header 3
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+}
 
-- Bulleted
-- List
+.slider:before{
+    position: absolute;
+    content: "";
+    height: 26px;
+    width:26px ;
+    left:4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+}
 
-1. Numbered
-2. List
+input:checked + .slider {
+    background-color: rgb(255, 255, 255);
+}
 
-**Bold** and _Italic_ and `Code` text
+input:focus + .slider{
+    box-shadow: 0 0 20px rgb(255, 255, 255);
+}
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+.slider.round{
+    border-radius: 34px;
+}
+.slider.round:before {
+    border-radius: 50%;
+}
 
-[Link](url) and ![Image](src)
-```
+#clickme {
+    color: #d9ddde;
+    position:absolute;
+    display: inline-block;
+    width: 60px;
+    height:34px;
+    left: 5%;
+    top:3%;
+    text-indent: 12em;
+    font-size: 18px; 
+}
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
 
-### Jekyll Themes
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&display=swap');
+#center {
+font-family: 'PT Sans Narrow', sans-serif;
+}
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/eeselling/site/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+#button-text {
+font-family: 'Open Sans Condensed', sans-serif;
+}
 
-### Support or Contact
+#block {
+  margin-left: 3px;
+  margin-right:3px;
+}
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+
+    </style>
+
+</head>
+<body>
+
+<div id='hero'>
+
+        <video autoplay="autoplay" loop="" class="myVideo" id="myVideo">
+            <source src="https://cdn.discordapp.com/attachments/903649777399504966/1007965330167038106/music.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+          </video> 
+
+
+<div class ="content d-flex align-items-center">
+  <div id= "center" class ="container text-center">
+    <h1 style="color:white; padding-bottom: 6px"> Our Socials | EESELLING </h1> 
+    <span class="icons">
+        <span id="block">
+            <a style="color: rgb(79, 107, 230);" href="https://discord.gg/eeselling"><i class="fab fa-discord fa-2x" ></i></a>
+        </span>
+		        <span id="block">
+            <a style="color: rgb(79, 107, 230);" href="https://instagram.com/bhm.dxniel"><i class="fab fa-instagram fa-2x" ></i></a>
+        </span>
+		        <span id="block">
+            <a style="color: rgb(79, 107, 230);" href="https://instagram.com/ohsq"><i class="fab fa-instagram fa-2x" ></i></a>
+        </span>
+        <span id="block">
+            <a style="color: rgb(79, 107, 230);" href="https://paypal.me/eeselling"><i class="fab fa-paypal fa-2x"></i></a>
+        </span>
+    </span>
+  </div>
+</div>
+</body>
+</html>
